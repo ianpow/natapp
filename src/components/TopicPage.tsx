@@ -107,6 +107,16 @@ const TopicPage: FC<TopicPageProps> = ({
       setFeedback({ show: true, correct: isCorrect });
       return isCorrect;
     }
+
+    const playCorrectSound = () => {
+      const audio = new Audio('/sounds/correct.mp3');
+      audio.play();
+    };
+    
+    const playPerfectScoreSound = () => {
+      const audio = new Audio('/sounds/perfect-score.mp3');
+      audio.play();
+    };
   
     // For text answers, clean up both the user's answer and the correct answer
     const cleanAnswer = (answer: string) => {
@@ -116,12 +126,12 @@ const TopicPage: FC<TopicPageProps> = ({
         .replace(/\s+/g, '') // Remove all whitespace
         .replace(/[²2]/, '2') // Normalize squared symbol
         .replace(/[³3]/, '3') // Normalize cubed symbol
-        .replace(/square\s*meters?|m2|m²|sq\.?\s*m\.?/g, 'm2') // Normalize square meters
-        .replace(/square\s*centimeters?|cm2|cm²|sq\.?\s*cm\.?/g, 'cm2') // Normalize square centimeters
-        .replace(/cubic\s*meters?|m3|m³|cu\.?\s*m\.?/g, 'm3') // Normalize cubic meters
-        .replace(/cubic\s*centimeters?|cm3|cm³|cu\.?\s*cm\.?/g, 'cm3') // Normalize cubic centimeters
-        .replace(/meters?|m\b/g, 'm') // Normalize meters
-        .replace(/centimeters?|cm\b/g, 'cm'); // Normalize centimeters
+        .replace(/square\s*metres?|m2|m²|sq\.?\s*m\.?/g, 'm2') // Normalize square meters
+        .replace(/square\s*centimetres?|cm2|cm²|sq\.?\s*cm\.?/g, 'cm2') // Normalize square centimeters
+        .replace(/cubic\s*metres?|m3|m³|cu\.?\s*m\.?/g, 'm3') // Normalize cubic meters
+        .replace(/cubic\s*centimetres?|cm3|cm³|cu\.?\s*cm\.?/g, 'cm3') // Normalize cubic centimeters
+        .replace(/metres?|m\b/g, 'm') // Normalize meters
+        .replace(/centimetres?|cm\b/g, 'cm'); // Normalize centimeters
     };
   
     const userAnswerClean = cleanAnswer(userAnswer);
@@ -129,6 +139,13 @@ const TopicPage: FC<TopicPageProps> = ({
   
     const isCorrect = userAnswerClean === correctAnswerClean;
     setFeedback({ show: true, correct: isCorrect });
+    if (isCorrect) {
+      playCorrectSound();
+      // Check if this is the last point needed for perfect score
+      if (score + 1 === totalQuestions) {
+        setTimeout(() => playPerfectScoreSound(), 500); // Delay perfect score sound
+      }
+    }
     onSaveAnswer(currentQuestionIndex, isCorrect);
     return isCorrect;
   };

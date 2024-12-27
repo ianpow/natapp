@@ -101,22 +101,31 @@ const TopicPage: FC<TopicPageProps> = ({
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
+  const playCorrectSound = () => {
+    const audio = new Audio('/sounds/correct.mp3');
+    audio.play().catch(e => console.log('Sound play error:', e));
+  };
+  
+  const playPerfectScoreSound = () => {
+    const audio = new Audio('/sounds/perfect-score.mp3');
+    audio.play().catch(e => console.log('Sound play error:', e));
+  };
+  
+  // Updated checkAnswer function
   const checkAnswer = () => {
     if (currentQuestion.type === 'multiple') {
       const isCorrect = selectedOption === currentQuestion.answer;
       setFeedback({ show: true, correct: isCorrect });
+      onSaveAnswer(currentQuestionIndex, isCorrect); // Add this line to save multiple choice answers
+      
+      if (isCorrect) {
+        playCorrectSound();
+        if (score + 1 === totalQuestions) {
+          setTimeout(() => playPerfectScoreSound(), 500);
+        }
+      }
       return isCorrect;
     }
-
-    const playCorrectSound = () => {
-      const audio = new Audio('/sounds/correct.mp3');
-      audio.play();
-    };
-    
-    const playPerfectScoreSound = () => {
-      const audio = new Audio('/sounds/perfect-score.mp3');
-      audio.play();
-    };
   
     // For text answers, clean up both the user's answer and the correct answer
     const cleanAnswer = (answer: string) => {

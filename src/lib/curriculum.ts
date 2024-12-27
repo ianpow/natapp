@@ -714,7 +714,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'Monthly NI on £5000. Nothing on first £1048, 12% to £4189, 2% above',
       options: ['£383.80', '£393.80', '£403.80', '£413.80'],
-      answer: '393.80',
+      answer: '£393.80',
       explanation: '(4189-1048) × 0.12 + (5000-4189) × 0.02',
       difficulty: 4,
       showCalculator: true

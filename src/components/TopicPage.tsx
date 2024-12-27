@@ -139,14 +139,14 @@ const TopicPage: FC<TopicPageProps> = ({
   
     const isCorrect = userAnswerClean === correctAnswerClean;
     setFeedback({ show: true, correct: isCorrect });
+    onSaveAnswer(currentQuestionIndex, isCorrect);
     if (isCorrect) {
       playCorrectSound();
       // Check if this is the last point needed for perfect score
       if (score + 1 === totalQuestions) {
-        setTimeout(() => playPerfectScoreSound(), 500); // Delay perfect score sound
+        setTimeout(() => playPerfectScoreSound(), 500);
       }
     }
-    onSaveAnswer(currentQuestionIndex, isCorrect);
     return isCorrect;
   };
 

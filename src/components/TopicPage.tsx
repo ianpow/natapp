@@ -140,6 +140,11 @@ const TopicPage: FC<TopicPageProps> = ({
         .replace(/cubic\s*metres?|m3|m³|cu\.?\s*m\.?/g, 'm3') // Normalize cubic meters
         .replace(/cubic\s*centimetres?|cm3|cm³|cu\.?\s*cm\.?/g, 'cm3') // Normalize cubic centimeters
         .replace(/metres?|m\b/g, 'm') // Normalize meters
+        .replace(/hours?|hour|h\b/g, 'h') // Normalize hours
+        .replace(/percent?|%\b/g, '%') // Normalize percentage
+        .replace(/grams?|g\b/g, 'g') // Normalize grams
+        .replace(/kilometres?|km\b/g, 'km') // Normalize kilometres
+        .replace(/litress?|l\b/g, 'L') // Normalize kilometres
         .replace(/centimetres?|cm\b/g, 'cm'); // Normalize centimeters
     };
   

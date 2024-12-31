@@ -73,7 +73,7 @@ export const initialCurriculum: Curriculum = {
       type: 'text',
       question: 'Find the total surface area of a cube with side length 4cm.',
       image: '/images/area5.png',
-      answer: '96cm3',
+      answer: '96cm2',
       explanation: 'Surface area of cube = 6 × side² = 6 × 4² = 6 × 16 = 96 square centimeters',
       difficulty: 5,
       showCalculator: true
@@ -153,7 +153,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find the diagonal of a rectangle with sides 9m and 12m.',
-      answer: '15',
+      answer: '15m',
       explanation: 'diagonal² = 9² + 12² = 81 + 144 = 225. √225 = 15',
       difficulty: 4,
       showCalculator: true
@@ -161,7 +161,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A ship sails 24km east then 32km north. What is its direct distance from the start?',
-      answer: '40',
+      answer: '40km',
       explanation: '24² + 32² = 576 + 1024 = 1600. √1600 = 40',
       difficulty: 5,
       showCalculator: true
@@ -188,7 +188,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A £60 shirt is reduced by 15%. What is the new price?',
-      answer: '51',
+      answer: '£51',
       explanation: '15% of 60 = 9, so 60 - 9 = 51',
       difficulty: 3,
       showCalculator: true
@@ -196,7 +196,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A price increases from £80 to £100. What is the percentage increase?',
-      answer: '25',
+      answer: '25%',
       explanation: 'Increase = 20, (20 ÷ 80) × 100 = 25%',
       difficulty: 4,
       showCalculator: true
@@ -204,7 +204,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'An item costing £200 is increased by 20% then decreased by 20%. What is the final price?',
-      answer: '192',
+      answer: '£192',
       explanation: '£200 → £240 (+20%) → £192 (-20%). Overall 4% decrease.',
       difficulty: 5,
       showCalculator: true
@@ -214,7 +214,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate the speed in mph if a car travels 120 miles in 2 hours.',
-      answer: '60',
+      answer: '60mph',
       explanation: 'Speed = Distance ÷ Time = 120 ÷ 2 = 60 mph',
       difficulty: 1,
       showCalculator: true
@@ -222,7 +222,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'How far does a train travel in 3 hours at 50 mph?',
-      answer: '150',
+      answer: '150 miles',
       explanation: 'Distance = Speed × Time = 50 × 3 = 150 miles',
       difficulty: 2,
       showCalculator: true
@@ -231,7 +231,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'A cyclist travels 36 miles at 12 mph. How long does the journey take in hours?',
       options: ['2', '3', '4', '5'],
-      answer: '3',
+      answer: '3 hours',
       explanation: 'Time = Distance ÷ Speed = 36 ÷ 12 = 3 hours',
       difficulty: 3,
       showCalculator: true
@@ -239,7 +239,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A car travels 240km in 3 hours. What is its average speed in km/h?',
-      answer: '80',
+      answer: '80 km/h',
       explanation: 'Speed = Distance ÷ Time = 240 ÷ 3 = 80 km/h',
       difficulty: 4,
       showCalculator: true
@@ -247,7 +247,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A journey of 360 miles consists of 2h at 60mph and the rest at 90mph. How long for the rest?',
-      answer: '2.67',
+      answer: '2.67h',
       explanation: '2h at 60mph = 120 miles, remaining 240 miles at 90mph = 240/90 = 2.67h',
       difficulty: 5,
       showCalculator: true
@@ -361,15 +361,15 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'In a class of 30, table shows 12 students got an A. What percentage is this?',
-      answer: '40',
+      answer: '40%',
       explanation: '(12 ÷ 30) × 100 = 40%',
       difficulty: 3,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Shop A: £8.50, Shop B: 15% off £9.20. Which is cheaper and by how much?',
-      answer: '7.82',
+      question: 'Shop A: £8.50, Shop B: 15% off £9.20. Which shop is cheaper and by how much? write your answer as Shop x is cheaper by £x',
+      answer: 'Shop B is cheaper by £0.68',
       explanation: 'Shop B price = £9.20 - 15% = £7.82, cheaper by £0.68',
       difficulty: 4,
       showCalculator: true
@@ -377,7 +377,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Utility bill: £120 fixed charge plus £0.15 per unit. Calculate bill for 450 units',
-      answer: '187.50',
+      answer: '£187.50',
       explanation: '£120 + (450 × £0.15) = £187.50',
       difficulty: 5,
       showCalculator: true
@@ -386,9 +386,9 @@ export const initialCurriculum: Curriculum = {
   'Container Packing': [
     {
       type: 'text',
-      question: 'How many 10cm cubes fit in a 30cm × 20cm × 10cm box?',
-      answer: '60',
-      explanation: '(30 ÷ 10) × (20 ÷ 10) × (10 ÷ 10) = 60',
+      question: 'How many 10cm3 cubes fit in a 30cm × 20cm × 10cm box?',
+      answer: '600',
+      explanation: '(30cm x 20cm x 10cm) / (10cm3) = 6000cm3 / 10cm3 = 600',
       difficulty: 1,
       showCalculator: true
     },
@@ -413,13 +413,13 @@ export const initialCurriculum: Curriculum = {
       type: 'text',
       question: 'Find maximum number of 20cm × 10cm × 5cm boxes in 40cm × 30cm × 20cm container',
       answer: '24',
-      explanation: 'Best fit is 2 × 3 × 4 = 24 boxes',
+      explanation: '(40x30x20)/(20x10x5) = 24000 / 1000 = 24)',
       difficulty: 4,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Pack 20cm × 15cm × 10cm boxes into 100cm × 80cm × 60cm container with 5cm spacing. How many fit?',
+      question: 'Pack 20cm × 15cm × 10cm boxes into 100cm × 80cm × 60cm container leaving a 5cm space all round between the boxes and the container walls. How many fit?',
       answer: '60',
       explanation: 'Adjust for spacing: (100-5)÷25 × (80-5)÷20 × (60-5)÷15 = 60',
       difficulty: 5,
@@ -430,7 +430,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert 500 centimeters to meters',
-      answer: '5',
+      answer: '5m',
       explanation: 'Divide by 100: 500 ÷ 100 = 5',
       difficulty: 1,
       showCalculator: true
@@ -438,7 +438,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert 2.5 kg to grams',
-      answer: '2500',
+      answer: '2500g',
       explanation: 'Multiply by 1000: 2.5 × 1000 = 2500',
       difficulty: 2,
       showCalculator: true
@@ -446,7 +446,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert 8 miles to kilometers (1 mile = 1.61 km)',
-      answer: '12.88',
+      answer: '12.88 km',
       explanation: 'Multiply by conversion factor: 8 × 1.61 = 12.88',
       difficulty: 3,
       showCalculator: true
@@ -462,8 +462,8 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Convert 2.5 cubic meters to liters',
-      answer: '2500',
+      question: 'Convert 2.5 cubic meters to liters (L)',
+      answer: '2500L',
       explanation: '1 m³ = 1000 L, so 2.5 × 1000 = 2500',
       difficulty: 5,
       showCalculator: true
@@ -473,7 +473,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'If 3 books cost £12, how much do 6 books cost?',
-      answer: '24',
+      answer: '£24',
       explanation: 'Double the books = double the cost: 12 × 2 = 24',
       difficulty: 1,
       showCalculator: true
@@ -481,7 +481,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'If 5 items cost £20, how much do 8 items cost?',
-      answer: '32',
+      answer: '£32',
       explanation: 'Find cost per item (£4), multiply by 8',
       difficulty: 2,
       showCalculator: true
@@ -489,7 +489,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'If 200g of flour makes 4 cakes, how much flour for 10 cakes?',
-      answer: '500',
+      answer: '500g',
       explanation: '(200 ÷ 4) × 10 = 500',
       difficulty: 3,
       showCalculator: true
@@ -498,7 +498,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'If 3 workers take 4 hours, how long do 2 workers take assuming direct proportion?',
       options: ['3', '4', '5', '6'],
-      answer: '6',
+      answer: '6h',
       explanation: '(3 × 4) ÷ 2 = 6',
       difficulty: 4,
       showCalculator: true
@@ -506,7 +506,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Machine produces 150 items in 5 hours. How many hours to produce 630 items?',
-      answer: '21',
+      answer: '21h',
       explanation: '(5 × 630) ÷ 150 = 21',
       difficulty: 5,
       showCalculator: true
@@ -516,7 +516,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Exchange £100 to euros at rate £1 = €1.15',
-      answer: '115',
+      answer: '€115',
       explanation: 'Multiply by exchange rate: 100 × 1.15 = 115',
       difficulty: 1,
       showCalculator: true
@@ -524,7 +524,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert €230 to pounds at rate £1 = €1.15',
-      answer: '200',
+      answer: '£200',
       explanation: 'Divide by exchange rate: 230 ÷ 1.15 = 200',
       difficulty: 2,
       showCalculator: true
@@ -532,7 +532,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert £300 to dollars then to euros. Rates: £1 = $1.25, $1 = €0.92',
-      answer: '345',
+      answer: '€345',
       explanation: '£300 → $375 → €345 (300 × 1.25 × 0.92)',
       difficulty: 3,
       showCalculator: true
@@ -541,7 +541,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'Exchange £500: Bureau A rate 1.12, Bureau B charges 2% commission with rate 1.15. Which is better?',
       options: ['Bureau A', 'Bureau B', 'Same rate', 'Not enough information'],
-      answer: 'Bureau A',
+      answer: 'Bureau B',
       explanation: 'A: 500 × 1.12 = €560, B: (500 × 1.15) × 0.98 = €563.50',
       difficulty: 4,
       showCalculator: true
@@ -549,7 +549,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert money through three currencies: £500 → €575 → $661.25 → £485. What was the percentage loss?',
-      answer: '3',
+      answer: '3%',
       explanation: 'Loss = £15, (15 ÷ 500) × 100 = 3%',
       difficulty: 5,
       showCalculator: true
@@ -583,9 +583,9 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Which is steeper: rise 5m over 20m, or rise 3m over 11m?',
-      answer: '3m over 11m',
-      explanation: 'First = 0.25, Second = 0.27',
+      question: 'Which is steeper: A- rise 5m over 20m, or B-rise 3m over 11m? Answer A or B',
+      answer: 'B',
+      explanation: 'A = 0.25, B = 0.27',
       difficulty: 4,
       showCalculator: true
     },
@@ -611,7 +611,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: '£300 item: £60 deposit + 10 monthly payments of £26. What is total cost?',
-      answer: '320',
+      answer: '£320',
       explanation: '£60 + (10 × £26) = £320',
       difficulty: 2,
       showCalculator: true
@@ -619,7 +619,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: '15% deposit on £800 TV plus 12 payments of £65. What is total cost?',
-      answer: '900',
+      answer: '£900',
       explanation: '(£800 × 0.15) + (12 × £65) = £900',
       difficulty: 3,
       showCalculator: true
@@ -646,7 +646,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'If 4 workers take 6 hours, how long do 8 workers take?',
-      answer: '3',
+      answer: '3h',
       explanation: 'As workers double, time halves',
       difficulty: 1,
       showCalculator: true
@@ -654,7 +654,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Journey takes 3 hours at 60mph. How long at 90mph?',
-      answer: '2',
+      answer: '2h',
       explanation: '180 ÷ 90 = 2 hours',
       difficulty: 2,
       showCalculator: true
@@ -689,15 +689,15 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate NI on £2000 monthly salary at 12% on earnings above £1048',
-      answer: '114.24',
+      answer: '£114.24',
       explanation: '(2000 - 1048) × 0.12 = 114.24',
       difficulty: 1,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Calculate monthly NI on £4500: 12% on £1048-£4189, 2% above',
-      answer: '386.98',
+      question: 'Calculate monthly NI on £4500: 12% on £1048-£4189 then 2% above £4189',
+      answer: '£386.98',
       explanation: '(4189 - 1048) × 0.12 + (4500 - 4189) × 0.02',
       difficulty: 2,
       showCalculator: true
@@ -705,14 +705,14 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate annual NI on £35,000. No NI below £12,570, 12% to £50,270',
-      answer: '2691.60',
+      answer: '£2691.60',
       explanation: '(35,000 - 12,570) × 0.12 = 2,691.60',
       difficulty: 3,
       showCalculator: true
     },
     {
       type: 'multiple',
-      question: 'Monthly NI on £5000. Nothing on first £1048, 12% to £4189, 2% above',
+      question: 'Monthly NI on £5000. Nothing on first £1048, 12% to £4189 then 2% above £4189',
       options: ['£383.80', '£393.80', '£403.80', '£413.80'],
       answer: '£393.80',
       explanation: '(4189-1048) × 0.12 + (5000-4189) × 0.02',
@@ -721,9 +721,9 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Calculate monthly take-home from £42,000 annual salary with 20% tax, NI rates as above, 5% pension',
-      answer: '2651.83',
-      explanation: 'Monthly gross £3500 minus tax, NI, pension',
+      question: 'Calculate monthly take-home from £42,000 annual salary with 20% tax, NI rates 12%. No tax on earnings below £1048. 5% pension deducted before tax',
+      answer: '£2596',
+      explanation: '£42000 / 12 = £3500 monthly. £3500 - 5% pension = £3325. £3325 - £1048 tax allowance = £2277. £2277 - 20% tax + 12 % NI = £2277 - 32% = £1548. Total monthly pay £1048 (tax allowance) + £1548 (amount left after tax) = £2596',
       difficulty: 5,
       showCalculator: true
     }

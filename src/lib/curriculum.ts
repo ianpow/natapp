@@ -990,20 +990,20 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'multiple',
-      question: 'On a scale marked in feet and meters, what is 6ft in meters?',
-      options: ['1.83', '1.93', '2.03', '2.13'],
+      question: 'On a scale marked in feet and meters, what is 2ft 3 inches in metres?',
+      options: ['0.68m', '1.93', '2.03', '2.13'],
       image: '/images/readingscales4.png',
-      answer: '1.83',
+      answer: '0.68m',
       explanation: 'Read both scales at marker point',
       difficulty: 4,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'WHat is the measurement? Read main scale in 1mm intervals and vernier scale measuring 0.1mm intervals',
+      question: 'What is the measurement in milimetres? Read main scale in 1mm intervals and vernier scale measuring 0.1mm intervals',
       image: '/images/readingscales5.png',
       answer: '11.9mm',
-      explanation: 'Main scale 1.1mm + vernier reading 0.09mm',
+      explanation: 'Main scale 11mm + vernier reading 0.9mm',
       difficulty: 5,
       showCalculator: false
     }

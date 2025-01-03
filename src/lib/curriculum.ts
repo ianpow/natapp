@@ -128,6 +128,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find the hypotenuse of a right triangle with sides 3 and 4.',
+      image: '/images/pythag1.png',
       answer: '5',
       explanation: 'a² + b² = c². 3² + 4² = 9 + 16 = 25. √25 = 5',
       difficulty: 1,
@@ -136,6 +137,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'In a right triangle, the hypotenuse is 10 and one side is 6. Find the other side.',
+      image: '/images/pythag2.png',
       answer: '8',
       explanation: 'a² + b² = c². b² = 10² - 6² = 100 - 36 = 64. √64 = 8',
       difficulty: 2,
@@ -144,6 +146,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'multiple',
       question: 'A ladder 13m long reaches a wall 12m high. How far is the foot from the wall?',
+      image: '/images/pythag3.png',
       options: ['3m', '5m', '7m', '9m'],
       answer: '5m',
       explanation: '13² = 12² + x². 169 = 144 + x². x² = 25. x = 5',
@@ -153,6 +156,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find the diagonal of a rectangle with sides 9m and 12m.',
+      image: '/images/pythag4.png',
       answer: '15m',
       explanation: 'diagonal² = 9² + 12² = 81 + 144 = 225. √225 = 15',
       difficulty: 4,
@@ -161,6 +165,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A ship sails 24km east then 32km north. What is its direct distance from the start?',
+      image: '/images/pythag5.png',
       answer: '40km',
       explanation: '24² + 32² = 576 + 1024 = 1600. √1600 = 40',
       difficulty: 5,
@@ -732,6 +737,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find perimeter of rectangle length 8m, width 5m',
+      image: '/images/perimeter1.png',
       answer: '26',
       explanation: '2 × (length + width) = 2 × (8 + 5) = 26m',
       difficulty: 1,
@@ -740,6 +746,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate perimeter of L-shape: length 10cm, width 6cm, indent 4cm × 3cm',
+      image: '/images/perimeter2.png',
       answer: '38',
       explanation: 'Add all outer edges: 10 + 6 + 4 + 3 + 6 + 9 = 38cm',
       difficulty: 2,
@@ -748,6 +755,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find circumference of circle radius 7cm (π = 3.14)',
+      image: '/images/area3.png',
       answer: '43.96',
       explanation: '2 × π × r = 2 × 3.14 × 7 = 43.96cm',
       difficulty: 3,
@@ -756,6 +764,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'multiple',
       question: 'Find perimeter of semicircle diameter 10cm with rectangle 10cm × 4cm attached',
+      image: '/images/perimeter4.png',
       options: ['43.7', '44.7', '45.7', '46.7'],
       answer: '45.7',
       explanation: '(π × 10 ÷ 2) + 10 + 4 + 4 + 10 = 45.7cm',
@@ -765,6 +774,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate perimeter of regular octagon side length 5cm',
+      image: '/images/perimeter5.png',
       answer: '40',
       explanation: '8 × 5 = 40cm',
       difficulty: 5,
@@ -971,7 +981,7 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Read pressure gauge marked 0-100 in steps of 20 showing 65',
+      question: 'WHat is the reading on the pressure gauge?',
       image: '/images/readingscales3.png',
       answer: '65',
       explanation: 'Count major divisions, interpolate between',
@@ -990,7 +1000,7 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Read main scale in 1mm intervals and vernier scale measuring 0.1mm intervals',
+      question: 'WHat is the measurement? Read main scale in 1mm intervals and vernier scale measuring 0.1mm intervals',
       image: '/images/readingscales5.png',
       answer: '11.9mm',
       explanation: 'Main scale 1.1mm + vernier reading 0.09mm',

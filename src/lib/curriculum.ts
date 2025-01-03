@@ -775,6 +775,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'How many degrees represent 25% in a pie chart?',
+      image: '/images/pie1.png',
       answer: '90',
       explanation: '25% of 360° = 360 × 0.25 = 90°',
       difficulty: 1,
@@ -783,7 +784,8 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'In a pie chart, chocolate ice cream is shown as 108°. What percentage is this?',
-      answer: '30',
+      image: '/images/pie2.png',
+      answer: '30%',
       explanation: '(108 ÷ 360) × 100 = 30%',
       difficulty: 2,
       showCalculator: true
@@ -791,8 +793,9 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'multiple',
       question: 'For cats(12), dogs(18), rabbits(6), what angle represents dogs?',
+      image: '/images/pie3.png',
       options: ['160°', '170°', '180°', '190°'],
-      answer: '180',
+      answer: '180°',
       explanation: '18 out of 36 total = 180°',
       difficulty: 3,
       showCalculator: true
@@ -800,6 +803,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'If 45° represents 40 students, how many students in total?',
+      image: '/images/pie4.png',
       answer: '320',
       explanation: '(40 × 360) ÷ 45 = 320',
       difficulty: 4,
@@ -808,6 +812,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Two pie charts show same total (480) but different proportions. If sector A is 90° in first chart and 120° in second, whats the numerical difference?',
+      image: '/images/pie5.png',
       answer: '40',
       explanation: '90° = 120, 120° = 160, difference = 40',
       difficulty: 5,
@@ -835,7 +840,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A(2h)→B(3h), A→C(4h)→D(1h). Find critical path duration.',
-      answer: '7',
+      answer: '7h',
       explanation: 'A→C→D = 2+4+1 = 7 hours',
       difficulty: 3,
       showCalculator: true
@@ -850,9 +855,10 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Calculate shortest completion time for network with parallel tasks and multiple dependencies',
-      answer: '12',
-      explanation: 'Map all paths, identify critical path = 12 hours',
+      question: 'From these critical paths, what is the longest completion duration? ',
+      image: '/images/precedencetables5.png',
+      answer: '19h',
+      explanation: 'A > B > E > F = 3+5+7+4 = 19h',
       difficulty: 5,
       showCalculator: true
     }
@@ -877,7 +883,7 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'What is the probability of rolling odd number or multiple of 3 on die?',
+      question: 'What is the probability of rolling an odd number or multiples of 3 on die?',
       answer: '4/6',
       explanation: '(3/6 odds) + (2/6 multiples) - (1/6 both) = 4/6',
       difficulty: 3,
@@ -912,7 +918,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Share £100 in ratio 3:2',
-      answer: '60',
+      answer: '£60',
       explanation: 'Total parts = 5, each part = £20, so 3 parts = £60',
       difficulty: 2,
       showCalculator: true
@@ -929,7 +935,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Recipe uses ratio 5:3:2 for flour:sugar:butter, total 200g. How much flour?',
-      answer: '100',
+      answer: '100g',
       explanation: 'Total parts = 10, each part = 20g, flour = 5 parts = 100g',
       difficulty: 4,
       showCalculator: true
@@ -946,8 +952,9 @@ export const initialCurriculum: Curriculum = {
   'Reading Scales': [
     {
       type: 'multiple',
-      question: 'Read temperature on thermometer marked in 10°C intervals showing 35°C',
+      question: 'The thermometer is marked in 10°C intervals. What is the temperature?',
       options: ['25°C', '30°C', '35°C', '40°C'],
+      image: '/images/readingscales1.png',
       answer: '35°C',
       explanation: 'Count major divisions, each minor division = 2°C',
       difficulty: 1,
@@ -956,7 +963,8 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert 15kg shown on scale to pounds (1kg = 2.2lbs)',
-      answer: '33',
+      image: '/images/readingscales2.png',
+      answer: '33lbs',
       explanation: 'Multiply by conversion factor: 15 × 2.2',
       difficulty: 2,
       showCalculator: true
@@ -964,6 +972,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Read pressure gauge marked 0-100 in steps of 20 showing 65',
+      image: '/images/readingscales3.png',
       answer: '65',
       explanation: 'Count major divisions, interpolate between',
       difficulty: 3,
@@ -973,6 +982,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'On a scale marked in feet and meters, what is 6ft in meters?',
       options: ['1.83', '1.93', '2.03', '2.13'],
+      image: '/images/readingscales4.png',
       answer: '1.83',
       explanation: 'Read both scales at marker point',
       difficulty: 4,
@@ -980,9 +990,10 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Read vernier scale measuring 0.1mm intervals showing 3.35mm',
-      answer: '3.35',
-      explanation: 'Main scale + vernier reading',
+      question: 'Read main scale in 1mm intervals and vernier scale measuring 0.1mm intervals',
+      image: '/images/readingscales5.png',
+      answer: '11.9mm',
+      explanation: 'Main scale 1.1mm + vernier reading 0.09mm',
       difficulty: 5,
       showCalculator: false
     }
@@ -991,15 +1002,15 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'On scale 1:100, what length represents 5 meters?',
-      answer: '5',
+      answer: '5cm',
       explanation: '5m = 500cm, divide by 100 = 5cm',
       difficulty: 1,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'On map scale 1:50000, distance is 6cm. What\'s actual distance in km?',
-      answer: '3',
+      question: 'On map scale 1:50000, distance is 6cm. What is the actual distance in km?',
+      answer: '3km',
       explanation: '6cm × 50000 = 300000cm = 3km',
       difficulty: 2,
       showCalculator: true
@@ -1016,15 +1027,15 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Distance on 1:25000 OS map is 8cm. What is actual distance in meters?',
-      answer: '2000',
+      answer: '2000m',
       explanation: '8 × 25000 = 200000cm = 2000m',
       difficulty: 4,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Floor plan scale 1:75. Room area on plan is 24cm². What\'s actual area?',
-      answer: '135',
+      question: 'Floor plan scale 1:75. Room area on plan is 24cm². What is the actual area?',
+      answer: '135m2',
       explanation: '24 × 75² = 135000cm² = 135m²',
       difficulty: 5,
       showCalculator: true
@@ -1035,6 +1046,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'What type of correlation is shown by points (2,4), (3,6), (4,8)?',
       options: ['No correlation', 'Weak positive', 'Strong positive', 'Negative'],
+      image: '/images/scatter1.png',
       answer: 'Strong positive',
       explanation: 'As x increases, y increases proportionally',
       difficulty: 1,
@@ -1042,7 +1054,8 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Draw line of best fit for points (1,2), (2,5), (3,7), (4,8), (5,12). What\'s the trend?',
+      question: 'Draw line of best fit for points (1,2), (2,5), (3,7), (4,8), (5,12). What is the trend?',
+      image: '/images/scatter2.png',
       answer: 'Positive',
       explanation: 'Line shows positive correlation',
       difficulty: 2,
@@ -1051,6 +1064,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Describe correlation between hours studied and test scores: (2,45), (3,55), (4,65), (5,72)',
+      image: '/images/scatter3.png',
       answer: 'Strong positive',
       explanation: 'As hours increase, scores increase steadily',
       difficulty: 3,
@@ -1067,6 +1081,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Identify outlier and explain impact: (1,2), (2,4), (3,6), (4,15), (5,10)',
+      image: '/images/scatter5.png',
       answer: '(4,15)',
       explanation: 'Point (4,15) significantly away from pattern, weakens correlation',
       difficulty: 5,
@@ -1110,7 +1125,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Dataset has mean 50, SD 10. What percentage lies within one SD of mean?',
-      answer: '68',
+      answer: '68%',
       explanation: 'Normal distribution: approximately 68%',
       difficulty: 5,
       showCalculator: false
@@ -1127,9 +1142,9 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Flight leaves Sydney (GMT+11) at 22:00, arrives Dubai (GMT+4) 10 hours later',
-      answer: '05:00',
-      explanation: '22:00 + 10h - 7h time difference = 05:00',
+      question: 'Flight leaves Sydney (GMT+11) at 22:00, arrives Dubai (GMT+4) 10 hours later. WHat time does it land in Dubai?',
+      answer: '01:00',
+      explanation: '22:00 + 10h - 7h time difference = 01:00',
       difficulty: 2,
       showCalculator: true
     },
@@ -1144,7 +1159,7 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Meeting in Tokyo (GMT+9) at 09:00. What time to leave London for 12h flight?',
+      question: 'Meeting in Tokyo (GMT+9) at 09:00. What is the latest time you could leave London for the meeting if the flight takes 12h?',
       answer: '12:00',
       explanation: '09:00 - 9h - 12h = 12:00 previous day',
       difficulty: 4,
@@ -1152,7 +1167,7 @@ export const initialCurriculum: Curriculum = {
     },
     {
       type: 'text',
-      question: 'Conference call: London 12:00, calculate times for NY (-5h), Sydney (+11h), Tokyo (+9h)',
+      question: 'Conference call: London 12:00, calculate times for NY (-5h), Sydney (+11h), Tokyo (+9h). Show your answer as xx:xx,xx:xx,xx:xx',
       answer: '07:00,23:00,21:00',
       explanation: 'Apply each time difference to London time',
       difficulty: 5,
@@ -1162,16 +1177,16 @@ export const initialCurriculum: Curriculum = {
   'Tolerance': [
     {
       type: 'text',
-      question: 'Length 50mm ±2mm. What are the acceptable limits?',
-      answer: '48,52',
-      explanation: 'Subtract and add tolerance from nominal value',
+      question: 'Length 50mm ±2mm. What are the acceptable limits? Show answer as Xmm,Xmm',
+      answer: '48mm,52mm',
+      explanation: 'Subtract and add tolerance from nominal value (50mm-2mm = 48mm) (50mm+2mm = 52mm)',
       difficulty: 1,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Weight 100g ±5%. What are the limits?',
-      answer: '95,105',
+      question: 'Weight 100g ±5%. What are the limits? Show answer as Xg,Xg',
+      answer: '95g,105g',
       explanation: 'Calculate 5% = 5g, subtract and add to 100g',
       difficulty: 2,
       showCalculator: true
@@ -1181,23 +1196,23 @@ export const initialCurriculum: Curriculum = {
       question: 'Part must be 30cm ±10%. Is 32.5cm acceptable?',
       options: ['Yes', 'No', 'Need more information', 'Cannot determine'],
       answer: 'Yes',
-      explanation: 'Limits 27cm to 33cm, 32.5cm within range',
+      explanation: '30cm plus or minus 10% (3cm) would give limits between 27cm and 33cm, 32.5cm is within range',
       difficulty: 3,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Component A: 15mm ±0.5mm, B: 15mm ±2%. Which has tighter tolerance?',
-      answer: 'A',
-      explanation: 'Compare ranges: A(14.5-15.5mm), B(14.7-15.3mm)',
+      question: 'Component A: 15mm ±0.5mm, B: 15mm ±2%. Which has tighter tolerance, Compontent A or Component B?',
+      answer: 'Component B',
+      explanation: 'Compare ranges: A(14.5-15.5mm which is a 1mm tolerance), B(14.7-15.3mm which is a 0.6mm tolerance)',
       difficulty: 4,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Machine produces parts 100mm ±2%. From sample of 50, how many between 99mm and 101mm are acceptable?',
+      question: 'A machine produces parts 100mm ±2%. From sample of 50, how many between 99mm and 101mm are acceptable?',
       answer: '50',
-      explanation: 'Tolerance range 98mm-102mm includes given range',
+      explanation: 'Tolerance range 98mm-102mm so all 50 parts from the sample are within tolerance',
       difficulty: 5,
       showCalculator: true
     }
@@ -1206,15 +1221,15 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate volume of box 5m × 3m × 2m',
-      answer: '30',
+      answer: '30m2',
       explanation: 'Length × width × height = 5 × 3 × 2 = 30m³',
       difficulty: 1,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Find volume of cylinder radius 4cm, height 10cm (π = 3.14)',
-      answer: '502.4',
+      question: 'Find volume of a cylinder with a radius 4cm, height 10cm (π = 3.14)',
+      answer: '502.4cm3',
       explanation: 'πr²h = 3.14 × 4² × 10 = 502.4cm³',
       difficulty: 2,
       showCalculator: true
@@ -1222,24 +1237,24 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'multiple',
       question: 'Convert 2.5m³ to litres',
-      options: ['250', '2500', '25000', '250000'],
-      answer: '2500',
+      options: ['250L', '2500L', '25000L', '250000L'],
+      answer: '2500L',
       explanation: '1m³ = 1000L, so 2.5 × 1000 = 2500',
       difficulty: 3,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Find volume of cuboid 6×4×3m with cylinder radius 1m, height 3m removed',
-      answer: '63.56',
+      question: 'Find volume of cuboid 6×4×3m with a cylinder radius 1m, height 3m removed from the inside of it',
+      answer: '63.56m3',
       explanation: 'Cuboid (72m³) - cylinder (9.42m³) = 63.56m³',
       difficulty: 4,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Tank 80% full contains 400L. What\'s full capacity in cubic meters?',
-      answer: '0.5',
+      question: 'Tank 80% full contains 400L. What is the 100% capacity in cubic meters?',
+      answer: '0.5m3',
       explanation: '400L ÷ 0.8 = 500L = 0.5m³',
       difficulty: 5,
       showCalculator: true
@@ -1249,7 +1264,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate weekly pay at £12 per hour for 35 hours',
-      answer: '420',
+      answer: '£420',
       explanation: '35 × £12 = £420',
       difficulty: 1,
       showCalculator: true
@@ -1257,32 +1272,32 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate pay for 40 normal hours at £10/hour plus 5 overtime hours at time-and-a-half',
-      answer: '475',
+      answer: '£475',
       explanation: '(40 × £10) + (5 × £15) = £475',
       difficulty: 2,
       showCalculator: true
     },
     {
       type: 'multiple',
-      question: 'Weekly pay: 35 hours at £11.50, 8 hours at time-and-a-half, 4 hours at double time is?',
-      options: ['£538.25', '£548.25', '£558.25', '£568.25'],
-      answer: '558.25',
-      explanation: '(35 × 11.50) + (8 × 17.25) + (4 × 23) = 558.25',
+      question: 'Weekly pay: 35 hours at £11.50, 8 hours at time-and-a-half, 4 hours at double time. What is the total?',
+      options: ['£538.25', '£548.25', '£558.25', '£632.50'],
+      answer: '£632.50',
+      explanation: '(35 × 11.50) + (8 × 17.25) + (4 × 23) = 632.50',
       difficulty: 3,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Basic salary £400/week plus 5% commission on £2000 sales',
-      answer: '500',
+      question: 'Calcualte total weekly earnings on a basic salary of £400 per week plus 5% commission on £2000 sales',
+      answer: '£500',
       explanation: '£400 + (£2000 × 0.05) = £500',
       difficulty: 4,
       showCalculator: true
     },
     {
       type: 'text',
-      question: 'Monthly salary £2400, overtime at time-and-a-half for 12 hours, plus 3% commission on £8000 sales, minus 5% pension',
-      answer: '2682',
+      question: 'Earning £15 per hour for 40 hours per week gives a Monthly salary of £2400 for a sales job. If you also worked overtime at time-and-a-half for 12 hours and earned 3% commission on £8000 sales (minus 5% pension based on base mothly salary), what would you earn before tax?',
+      answer: '£2682',
       explanation: '2400 + (12 × £22.50) + 240 - 120 = 2,682',
       difficulty: 5,
       showCalculator: true
@@ -1291,8 +1306,8 @@ export const initialCurriculum: Curriculum = {
   'Appreciation': [
     {
       type: 'text',
-      question: 'Calculate simple interest on £1000 at 5% for 1 year',
-      answer: '1050',
+      question: 'Calculate simple interest on £1000 at 5% for 1 year. What would the full amount be at the end of 1 year?',
+      answer: '£1050',
       explanation: '£1000 + (£1000 × 0.05) = £1050',
       difficulty: 1,
       showCalculator: true
@@ -1300,7 +1315,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate compound interest on £2000 at 4% for 2 years',
-      answer: '2163.20',
+      answer: '£2163.20',
       explanation: '£2000 × 1.04² = £2163.20',
       difficulty: 2,
       showCalculator: true
@@ -1309,7 +1324,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'Car worth £12000 depreciates 15% per year for 2 years. Final value?',
       options: ['£8670', '£8700', '£8730', '£8760'],
-      answer: '8670',
+      answer: '£8670',
       explanation: '£12000 × 0.85² = £8670',
       difficulty: 3,
       showCalculator: true
@@ -1318,15 +1333,15 @@ export const initialCurriculum: Curriculum = {
       type: 'text',
       question: 'Which is better: 3% compound or 3.2% simple interest over 3 years on £5000?',
       answer: '3% compound',
-      explanation: 'Compare final amounts after calculations',
+      explanation: 'Compound (2000 + 3%) + (2060 + 3%) + (2121.8 + 3%) = £2192.66 vs Simple Interest (2000 + 3.2%) + (2000 + 3.2%) + (2000 + 3.2%) = £2192',
       difficulty: 4,
       showCalculator: true
     },
     {
       type: 'text',
       question: 'Investment grows 12% first year, drops 8% second year, grows 5% third year. Initial £2000',
-      answer: '2297.09',
-      explanation: '£2000 × 1.12 × 0.92 × 1.05 = £2297.09',
+      answer: '£2163.84',
+      explanation: '£2000 × 1.12 × 0.92 × 1.05 = £2163.84',
       difficulty: 5,
       showCalculator: true
     }

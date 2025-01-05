@@ -9,6 +9,7 @@ import { Progress } from '@/components/ui/progress';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { Alert, AlertDescription } from '@/components/ui/alert';
+import HintSheet from '@/components/HintSheet';
 import {
   Sheet,
   SheetContent,
@@ -24,6 +25,7 @@ import {
   Trophy,
   Star,
   Clock,
+  Lightbulb,
   Calculator as CalculatorIcon,
   Youtube as VideoIcon,
   Headphones as AudioIcon,
@@ -314,12 +316,17 @@ const TopicPage: FC<TopicPageProps> = ({
             </Alert>
           )}
 
-          <div className="grid grid-cols-2 gap-2">
-            <Button onClick={checkAnswer} className="w-full">Submit</Button>
-            <Button variant="outline" onClick={() => setShowAnswer(!showAnswer)} className="w-full">
-              {showAnswer ? 'Hide Solution' : 'Show Solution'}
-            </Button>
-          </div>
+<div className="grid grid-cols-2 gap-2">
+  <div className="flex gap-2">
+    <Button onClick={checkAnswer} className="flex-1">Submit</Button>
+    {currentQuestion.hints && (
+      <HintSheet hints={currentQuestion.hints} />
+    )}
+  </div>
+  <Button variant="outline" onClick={() => setShowAnswer(!showAnswer)}>
+    {showAnswer ? 'Hide Solution' : 'Show Solution'}
+  </Button>
+</div>
 
           {showAnswer && (
             <div className="p-3 bg-blue-50 rounded-lg space-y-2 text-sm">

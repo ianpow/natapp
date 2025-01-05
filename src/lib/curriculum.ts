@@ -10,6 +10,7 @@ export interface Question {
   explanation: string;
   difficulty: number;
   showCalculator: boolean;
+  hints?: string[];
 }
 
 export interface Curriculum {
@@ -1256,6 +1257,12 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find volume of cuboid 6×4×3m with a cylinder radius 1m, height 3m removed from the inside of it',
+      hints: [
+        '/images/hints/areahint1.png',
+        '/images/hints/areahint2.png',
+        '/images/hints/areahint3.png',  
+        '/images/hints/areahint4.png'
+      ],
       answer: '63.56m3',
       explanation: 'Cuboid (72m³) - cylinder (9.42m³) = 63.56m³',
       difficulty: 4,

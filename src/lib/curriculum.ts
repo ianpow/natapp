@@ -64,6 +64,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'A rectangular garden is 15m long and 8m wide with a semi-circular area on top with a radius of 7.5m. What is its area in square meters?',
       options: ['92m2', '208.3125m2', '46m2', '23m2'],
+      video: '/videos/area4.mp4',
       image: '/images/area4.png',
       answer: '208.3125m2',
       explanation: 'Area of rectangle = length × width = 15 × 8 = 120 square meters plus area of semi-circle = πr² / 2 = (3.14 x 7.5²) / 2 = 88.3125. Total area = 120 + 88.3125 = 208.3125 square meters',
@@ -73,6 +74,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find the total surface area of a cube with side length 4cm.',
+      video: '/videos/area5.mp4',
       image: '/images/area5.png',
       answer: '96cm2',
       explanation: 'Surface area of cube = 6 × side² = 6 × 4² = 6 × 16 = 96 square centimeters',
@@ -85,6 +87,7 @@ export const initialCurriculum: Curriculum = {
       type: 'text',
       question: 'Simplify the fraction 6/9',
       pdf: '/pdfs/fractions.pdf',
+      video: '/videos/fractions1.mp4',
       image: '/images/img2.png',
       answer: '2/3',
       explanation: 'Divide both numbers by their highest common factor (3): 6÷3/9÷3 = 2/3',
@@ -119,6 +122,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Divide 5/6 ÷ 2/3',
+      video: '/videos/fractions5.mp4',
       answer: '5/4',
       explanation: 'To divide fractions, multiply by the reciprocal: 5/6 × 3/2 = 15/12 = 5/4',
       difficulty: 5,
@@ -158,6 +162,7 @@ export const initialCurriculum: Curriculum = {
       type: 'text',
       question: 'Find the diagonal of a rectangle with sides 9m and 12m.',
       image: '/images/pythag4.png',
+      video: '/videos/pythagoras4.mp4',
       answer: '15m',
       explanation: 'diagonal² = 9² + 12² = 81 + 144 = 225. √225 = 15',
       difficulty: 4,
@@ -167,6 +172,7 @@ export const initialCurriculum: Curriculum = {
       type: 'text',
       question: 'A ship sails 24km east then 32km north. What is its direct distance from the start?',
       image: '/images/pythag5.png',
+      video: '/videos/pythagoras5.mp4',
       answer: '40km',
       explanation: '24² + 32² = 576 + 1024 = 1600. √1600 = 40',
       difficulty: 5,
@@ -202,6 +208,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A price increases from £80 to £100. What is the percentage increase?',
+      video: '/videos/percentages4.mp4',
       answer: '25%',
       explanation: 'Increase = 20, (20 ÷ 80) × 100 = 25%',
       difficulty: 4,
@@ -210,6 +217,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'An item costing £200 is increased by 20% then decreased by 20%. What is the final price?',
+      video: '/videos/percentages5.mp4',
       answer: '£192',
       explanation: '£200 → £240 (+20%) → £192 (-20%). Overall 4% decrease.',
       difficulty: 5,
@@ -245,6 +253,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A car travels 240km in 3 hours. What is its average speed in km/h?',
+      video: '/videos/speeddistancetime4.mp4',
       answer: '80 km/h',
       explanation: 'Speed = Distance ÷ Time = 240 ÷ 3 = 80 km/h',
       difficulty: 4,
@@ -253,6 +262,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'A journey of 360 miles consists of 2h at 60mph and the rest at 90mph. How long for the rest?',
+      video: '/videos/speeddistancetime5.mp4',
       answer: '2.67h',
       explanation: '2h at 60mph = 120 miles, remaining 240 miles at 90mph = 240/90 = 2.67h',
       difficulty: 5,
@@ -288,6 +298,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'What is 2³ + 20 ÷ 5 × 2?',
       options: ['12', '14', '16', '18'],
+      video: '/videos/bidmas4.mp4',
       answer: '16',
       explanation: '2³ = 8, 20 ÷ 5 = 4, 4 × 2 = 8, finally 8 + 8 = 16',
       difficulty: 4,
@@ -296,6 +307,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Calculate (3² + 12 ÷ 3) × (10 - 7)',
+      video: '/videos/bidmas5.mp4',
       answer: '39',
       explanation: '(9 + 4) × 3 = 13 × 3 = 39',
       difficulty: 5,
@@ -331,6 +343,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'From a box plot with median 20, Q1 = 15, Q3 = 25, min = 10, max = 30, find the range',
+      video: '/videos/boxplots4.mp4',
       answer: '20',
       explanation: 'Range = Maximum (30) - Minimum (10) = 20',
       difficulty: 4,
@@ -340,6 +353,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'Dataset A: median=10, IQR=6. Dataset B: median=12, IQR=4. Which is more consistent?',
       options: ['Dataset A', 'Dataset B', 'Both the same', 'Cannot determine'],
+      video: '/videos/boxplots5.mp4',
       answer: 'Dataset B',
       explanation: 'Lower IQR means less spread, therefore more consistent',
       difficulty: 5,
@@ -375,6 +389,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Shop A: £8.50, Shop B: 15% off £9.20. Which shop is cheaper and by how much? write your answer as Shop x is cheaper by £x',
+      video: '/videos/tables4.mp4',
       answer: 'Shop B is cheaper by £0.68',
       explanation: 'Shop B price = £9.20 - 15% = £7.82, cheaper by £0.68',
       difficulty: 4,
@@ -383,6 +398,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Utility bill: £120 fixed charge plus £0.15 per unit. Calculate bill for 450 units',
+      video: '/videos/tables5.mp4',
       answer: '£187.50',
       explanation: '£120 + (450 × £0.15) = £187.50',
       difficulty: 5,
@@ -418,6 +434,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Find maximum number of 20cm × 10cm × 5cm boxes in 40cm × 30cm × 20cm container',
+      video: '/videos/container4.mp4',
       answer: '24',
       explanation: '(40x30x20)/(20x10x5) = 24000 / 1000 = 24)',
       difficulty: 4,
@@ -461,6 +478,7 @@ export const initialCurriculum: Curriculum = {
       type: 'multiple',
       question: 'Convert 5 square meters to square centimeters',
       options: ['500', '5000', '50000', '500000'],
+      video: '/videos/convertingunits4.mp4',
       answer: '50000',
       explanation: 'Multiply by 100²: 5 × 10000 = 50000',
       difficulty: 4,
@@ -469,6 +487,7 @@ export const initialCurriculum: Curriculum = {
     {
       type: 'text',
       question: 'Convert 2.5 cubic meters to liters (L)',
+      video: '/videos/convertingunits5.mp4',
       answer: '2500L',
       explanation: '1 m³ = 1000 L, so 2.5 × 1000 = 2500',
       difficulty: 5,
